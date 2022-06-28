@@ -1,0 +1,25 @@
+<div class="main-page">
+    <div class="login-form">
+        <h4>-------Registration-------</h4>
+        <form #loginForm="ngForm">
+            <div class="form-field">
+                <input type="text" name="email"
+                 [(ngModel)]="model.email"
+                 placeholder="abc@gmail.com" />
+            </div>
+            <div class="form-field">
+                <input type="text" name="password"
+                 [(ngModel)]="model.password"
+                  placeholder="Enter_Password" />
+            </div>
+            <div class="form-field">
+                <input type="text" name="password_confirmation"
+                 [(ngModel)]="model.password_confirmation"
+                  placeholder="Enter_Confirm_Password" />
+            </div>
+            <div class="form-field">
+                <button (click)="registeruser()">Register</button>
+            </div>
+        </form>
+    </div>
+</div>
